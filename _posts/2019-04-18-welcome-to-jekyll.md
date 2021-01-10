@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Jekyll!"
+title: "নিউরাল নেটওয়ার্ক এবং ডিপ লার্নিং (পর্ব-১)"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
@@ -8,22 +8,159 @@ tags:
   - update
 ---
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+* * *
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+![](https://cdn-images-1.medium.com/max/1600/1*3wUxjP1a8Dd6_FJLl_EyAg.png)
+
+
+নিউরাল নেটওয়ার্ক এবং ডিপ লার্নিং এ স্বাগতম।
+
+নিউরাল নেটওয়ার্ক এবং ডিপ লার্নিংঃ [**_পর্ব-২_**](https://medium.com/@ariyanhasan/%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%B0%E0%A6%BE%E0%A6%B2-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AC-%E0%A7%A8-3097188af3a2)
+
+এই নিউরাল নেটওয়ার্কের সিরিজে যে টপিকগুলো কভার করা হবে,
+
+◉ নিউরাল নেটওয়ার্ক কি? ANNs বলতে কি বুঝায় এবং নিউরাল নেটওয়ার্ক কিভাবে কাজ করে?
+
+◉ forward-propagation এবং back propagation কি এবং কিভাবে কাজ করে?
+
+◉ Cat ও Dog ক্লাসিফিকেশন ( পাইথন ইমপ্লিমেন্টেশন)
+
+**নোট**: পাইথন ল্যাঙ্গুয়েজে ইমপ্লিমেন্টেশন করা হবে।
+
+এই পর্বে, আর্টিফিশিয়াল নিউরাল নেটওয়ার্কস (ANNs) সম্পর্কে যাদের কোন ধারনা নেই তাদেরকে ANNs এর সাথে পরিচয় করিয়ে দেয়া এবং ধীরে ধীরে sigmoid function, Relu function, tanh function নিয়ে বিস্তারিত আলোচনা করব এবং সেইগুলো পাইথনে ইমপ্লিমেন্ট করবো।
+
+এই পর্বে যা যা থাকছে,
+
+◉ নেটওয়ার্ক
+
+◉ আর্টিফিশিয়াল নিউরাল নেটওয়ার্কস (ANNs)
+
+◉ একটিভেশন ফাংশন ( sigmoid, tanh, relu) ইত্যাদি
+
+<!--more-->
+
+#### নেটওয়ার্ক (Networks):
+
+একটা জটিল সমস্যা সমাধানের জন্য “Divide and conquer” নামে একটি সুন্দর পদ্ধতিতে সমাধান করা হয়। এই পদ্ধতিতে, প্রথমে একটি জটিল সিস্টেমকে ছোট ছোট ইলিমেন্টে বিভক্ত করা হয়, তারপর সেই ছোট ছোট ইলিমেন্টগুলোর সলিউশন একত্রিত করে জটিল সিস্টেমকে সলভ করা হয়। নেটওয়ার্ক এর একটি এপরোচ হচ্ছে হচ্ছে এটি পদ্ধতি অর্জন করা। ছোট ছোট নেটওয়ার্কগুলোর আউটপুট মার্জ করে আমরা অরিজিনাল প্রবলেম এর সলিউশন বের করি। যেমন, একটা বড় নেটওয়ার্ক ভিন্ন ভিন্ন অনেকগুলো নেটওয়ার্কের সমন্বয়ে হতে পারে কিন্তু সেইগুলো আলাদা করা যাতে পারে দুইভাবে, অনেকগুলো নোড এবং নোডগুলোর মধ্যকার কানেকশনের মাধ্যমে। যেভাবে কিছু কম্পিউটার মিলে একটি লোকাল এরিয়া নেটওয়ার্ক গঠিত।
+
+একটি নোডকে আমরা কম্পিউটেশনাল ইউনিট হিসেবে বিবেচনা করতে পারি, যা কিছু ইউনপুট নিবে এবং সেইগুলোকে প্রসেস করে একটি আউটপুট দিবে। যেমন- কফি মেকার মেশিন আমরা ইনপুট হিসেবে পানি এবং প্রয়োজনীয় উপাদান দেই এবং মেশিন সেইগুলোকে প্রসেস করে আমাদেরকে আউটপুট হিসেবে কফি দেয়। এই প্রসেসটা অনেক সাধারণ হতে পারে ( ইনপুটগুল কে হিসেব করবে ) অথবা কম জটিল হতে পারে ( একটি নোড অন্য আরেকটি নোডের অন্তর্ভুক্ত ) ।
+
+কানেকশন নোডগুলোর মধ্যে তথ্যের আদান-প্রদান নির্ধারণ করে। তথ্যের আদান-প্রদান অ্যান -ডিরেকশনাল হতে পারে অথবা বাই-ডিরেকশনাল । সুতরাং, কিছু নোড একে ওপরের সাথে যুক্ত থেকে নিজেদের মধ্যে তথ্য আদান প্রদান করলেই তাকে একটা নেটওয়ার্ক বলা যায়।
+
+
+
+#### আর্টিফিশিয়াল নিউরাল নেটওয়ার্ক (ANNs)
+
+আর্টিফিশিয়াল নিউরাল নেটওয়ার্ক বুঝার আগে আমরা মানুষের ব্রেইনে থাকা নিউরন সম্পর্কে জেনে নেই। আমাদের ব্রেইন হচ্ছে অনেকগুলো নিউরনের সমন্বয়ে গঠিত একটি নেটওয়ার্ক। মানুষের ব্রেইনের নিউরনে চারটা পার্ট থাকে। সেগুলো হচ্ছে Dendrites, Soma, Axon এবং Synapses।
+
+*   Dendrites বিভিন্ন সোর্স থেকে সিগন্যাল ( ইনপুট ) রিসিভ করে।
+*   Soma ( cell-body ) সেই ইনপুটগুলোকে প্রসেস করে।
+*   Axon প্রসেস ইনপুটকে আউটপুটে পরিবর্তন করে।
+*   Synapses এর মাধ্যমে অন্যান্য নিউরনের Dendrites এর সাথে কানেকটেড থাকে এবং অন্যান্য নিউরনকেও একটিভ করতে পারে।
+
+নিচের চিত্রটি দেখুন,
+
+![](https://cdn-images-1.medium.com/max/1600/1*AkEFbnnspZVAlO2EByrNXQ.png)মস্তিষ্কের নিউরণ
+
+আমরা ইতিমধ্যে জেনেছি যে, একটি নেটওয়ার্ক অনেকগুলো নোডের সমন্বয়ে গঠিত। নেটওয়ার্কের এই নোডগুলোকে হচ্ছে এক একটি নিউরন। যেহেতু এই নিউরনগুলোকে সত্যিকারের নিউরন নয় তাই একে আর্টিফিশিয়াল নিউরন বলে এবং এই নিউরন নিয়ে গঠিত নেটওয়ার্ক কে আর্টিফিশিয়াল নিউরাল নেটওয়ার্ক বলে। এই আর্টিফিশিয়াল নিউরাল নেটওয়ার্ক হচ্ছে একটি কম্পিউটেশনাল মডেল যা মানুষের ব্রেইনের নিউরনের উপর ভিত্তি করে গঠিত। মানুষের ব্রেইনের নিউরনের বেসিক চারটা ফাংশনের মত আর্টিফিশিয়াল নিউরনের ও চারটি পার্ট আছে।
+
+সেগুলো হচ্ছে Inputs, sum function, Activation Function এবং Outputs।
+
+![](https://cdn-images-1.medium.com/max/1600/1*4rcEgJvZ9oh58IFTumQ47g.png)আর্টিফিশিয়াল নিউরণ
+
+বিভিন্ন ইনপুটগুলোকে ম্যথম্যাটিক্যালি Xn দ্বারা প্রকাশ করা হয়। প্রতিটি ইনপুট কে একটি কানেকশন weight দ্বারা গুন করা হয়। এই weight গুলোকে w দ্বারা প্রকাশ করা হয়। Sum function এই গুণফলগুলোকে যোগ করে Activation function এ পাঠায় এবং একটিভেশন ফাংশন সেইগুলো প্রসেস করে আউটপুট জেনারেট করে। এই আউটপুটগুলো অন্য এক বা একাধিক নিউরনের ইনপুটের সাথে কানেক্টেড থাকতে পারে।
+
+সুতরাং sum ফাংশন ইনপুটগুলোকে ওয়েট দ্বারা গুন করে সেগুলো যোগ করে এবং সাথে একটি bias ভ্যালু ও থাকে।
+
+![](https://cdn-images-1.medium.com/max/1600/1*Cx6PjxuxaNH94K3bYs68Lg.png)
+
+একটিভেশন ফাংশনঃ
+
+একটি কমন একটিভেশন হচ্ছে ফাংশন sigmoid (σ)। এটি একটি রিয়েল ভ্যালু ইনপুট নেয় এবং সেগুলোকে 0 থেকে 1 রেঞ্জর মধ্যে কনভার্ট করে। এছাড়াও আরও অনেকগুলো একটিভেশন ফাংশন আছে। পরবর্তিতে সেগুলো নিয়ে আলোচনা করা হবে।
+
+sigmoid একটিভেশন ফাংশনের ম্যাথমেটিক্যাল ফর্মুলা হচ্ছে-
+
+![](https://cdn-images-1.medium.com/max/1600/1*F7SkKBbvVUW9ec-Aa_Ee6Q.png)Activation ফাংশন এর গ্রাফ
+
+উদাহরণঃ
+
+এখন আমরা আমাদের নিউরনকে রিয়েল ভ্যালু দ্বারা ইনিশিয়াল করি। তারপর আমরা একটিভেশন (sigmoid) ফাংশনের ভ্যালু ক্যালকুলেট করে আউটপুট y বের করবো।
+
+![](https://cdn-images-1.medium.com/max/1600/1*7q_wQDndt8DQhQXjzzGpuQ.png)
+
+এইখানে আমাদের x0 এবং x1 হচ্ছে যথাক্রমে 1.3 এবং 1.7। Weight হচ্ছে যথাক্রমে 0.4 , 0.9 এবং bias হচ্ছে 0.1 ।
+
+এখন আমরা ইনপুটগুলোর সাথে weight গুলো গুন করে তারপর সেগুলো যোগ করে পাই,
+
+![](https://cdn-images-1.medium.com/max/1600/1*e1wo6BD62o3XFYbhTSRIBw.png)
+
+এখন sigmoid ফাংশনে এই ভ্যালু ইনপুট করলে আমরা পাই,
+
+![](https://cdn-images-1.medium.com/max/1600/1*-L6MNe23bGOWS73E2Z3jvw.png)
+
+সুতরাং আমাদের নিউরনের আউটপুট হচ্ছে 0.89।
+
+নিচে sigmoid ফাংশন পাইথনে ইমপ্লিমেন্টেশন দেখুন,
+
+``` python
+
+import numpy as np
+
+def sigmoid(x):
+    s = 1. / (1 + np.exp(-x))
+    return s
+    
 ```
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+* * *
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+sigmoid একটিভেশন ফাংশন ছাড়াও আরও অনেক একটিভেশন ফাংশন আছে। এই গুলোর মধ্যে tanh, ReLU অন্যতম।
+
+#### tanh একটিভেশন ফাংশনঃ
+
+tanh ফাংশন অনেকটা লজিস্টিক sigmoid ফাংশন এর মতই। tanh এর রেঞ্জ হচ্ছে -1 থেকে 1 পর্যন্ত। tanh ফাংশনের গঠন ও sigmoid এর মতই ( S-Shape ) ।
+
+tanh ফাংশনের ম্যাথম্যাটিক্যাল ফর্মুলা হচ্ছে ,
+
+![](https://cdn-images-1.medium.com/max/1600/1*-9beFV5dUNtk5BrEW0prpQ.png)tanh ফাংশনের ফর্মুলা![](https://cdn-images-1.medium.com/max/1600/1*M_0e3qEwJOHZaxIxW0I3LQ.png)tanh ফাংশনের গ্রাফ
+
+tanh ফাংশনের সুবিধা হচ্ছে নেগেটিভ ইনপুট এর জন্য গ্রাফের নেভেটিভ অংশে ম্যাপ হবে এবং ইনপুট জিরো ও tanh গ্রাফে জিরো এর কাছাকাছি ম্যাপ হবে।
+
+#### ReLU একটিভেশন ফাংশনঃ
+
+বর্তমানে সবথেকে বেশি ব্যবহৃত একটিভেশন ফাংশন হচ্ছে Rectifier linear unit ( সংক্ষেপে ReLU ) । ReLU একটিভেশন ফাংশনের ম্যাথম্যাটিক্যাল ফর্মুলা হচ্ছে ,
+
+**_y = max(0, x)_**
+
+![](https://cdn-images-1.medium.com/max/1600/1*VsaK_0rFXOmy53wf0mbJcQ.png)
+
+``` python
+
+def relu(x):
+    """
+    Compute the relu of x
+    Arguments:
+    x -- A scalar or numpy array of any size.
+    Return:
+    s -- relu(x)
+    """
+    s = np.maximum(0,x)
+    
+    return s
+    
+```
+
+পরবর্তি পর্বে forward propagation এবং backpropagation সম্পর্কে আলোচনা করা হবে।
+
+আপনার যদি কোন প্রশ্ন বা সাজেশন থাকে তাহলে অবশ্যই আমাকে মেইল বা social মিডিয়ার মাধ্যমে জানাবেন।
+
+[Gmail](http://mdhasan.nsu@gmail.com) | [Twitter](https://twitter.com/ItzMuHaSaN)
+
+References:
+
+[**What are Artificial Neural Networks**
+_This information provides you with information of,_www.psych.utoronto.ca](http://www.psych.utoronto.ca/users/reingold/courses/ai/cache/neural2.html "http://www.psych.utoronto.ca/users/reingold/courses/ai/cache/neural2.html")[](http://www.psych.utoronto.ca/users/reingold/courses/ai/cache/neural2.html)
+
+[http://cs231n.github.io/](http://cs231n.github.io/)
