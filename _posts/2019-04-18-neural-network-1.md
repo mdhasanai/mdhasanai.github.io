@@ -1,6 +1,7 @@
 ---
 title: "নিউরাল নেটওয়ার্ক এবং ডিপ লার্নিং (পর্ব-১)"
 date: 2019-04-18T15:34:30-04:00
+excerpt_separator: "<!--more-->"
 categories:
   - blog
 tags:
