@@ -73,30 +73,33 @@ author:
   avatar : "https://pbs.twimg.com/profile_images/1304475937321279488/68ND3Mdu_400x400.jpg"
   bio    : "Deep Learning Engineer at Gaze AI"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://mdhasanai.github.io/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mdhasanai"
+  
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:md.hasan01@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mdhasanai"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mdhasanai"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/mdhassanai/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mdhasanai"
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mdhasanai"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mdhasanai"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/mdhassanai/"
+      
 
 defaults:
   # _posts
