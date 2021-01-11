@@ -13,7 +13,7 @@ categories:
 
 ### Forward-propagation এবং Back-propagation কি এবং কিভাবে কাজ করে?
 
-আগের আর্টিকেলটি দেখতে [***পর্ব-১](https://medium.com/@ariyanhasan/%E0%A6%A8%E0%A6%BF%E0%A6%89%E0%A6%B0%E0%A6%BE%E0%A6%B2-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AC-fb8b4c5dde55)***
+আগের আর্টিকেলটি দেখতে [***পর্ব-১](https://mdhasanai.github.io/blog/neural-network-1/)***
 
 এই আর্টিকেলে দেখবো যে, কিভাবে forward-propagation এবং Back-propagation কাজ করে এবং কিভাবে weight এবং bias কে আপডেট করতে হয়। এই টপিককে দুইটা পার্টে বিভক্ত করছি। প্রথম পার্টে আমরা দেখবো কিভাবে থিউরেটিক্যালি কাজ করে এবং দ্বিতীয় পার্টে দেখবো পাইথনে ইমপ্লিমেন্টেশন।
 
