@@ -43,7 +43,10 @@ comments:
     colorscheme: # "light" (default), "dark"
     
 google:
-  search_engine_id: 6e19ed928d3c2deb8    
+  search_engine_id: 6e19ed928d3c2deb8   
+  
+# SEO Related
+google_site_verification : Y5rw02g0oLnDwyuQc0yd4h-Vsu7VVVLx0EQ-AXT6ir8
     
 include:
   - _pages
