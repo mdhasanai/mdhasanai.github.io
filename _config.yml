@@ -42,7 +42,8 @@ comments:
     num_posts: # 5 (default)
     colorscheme: # "light" (default), "dark"
     
-    
+google:
+  search_engine_id: 6e19ed928d3c2deb8    
     
 include:
   - _pages
