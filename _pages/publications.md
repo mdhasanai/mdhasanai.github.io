@@ -9,4 +9,5 @@ title: "Publication"
 
 ### A-DeepPixBis: Attentional Angular Margin for Face Anti-Spoofing
 ![proposed architectures](https://github.com/mdhasanai/mdhasanai.github.io/blob/master/assets/images/model_p.png?raw=true)
+
 [ [Paper](http://www.dicta2020.org/wp-content/uploads/2020/09/53_CameraReady.pdf), Code ] 
