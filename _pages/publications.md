@@ -15,3 +15,12 @@ In this paper, we propose a variant of BCE that enforces a margin in angular spa
 ![proposed architectures](https://github.com/mdhasanai/mdhasanai.github.io/blob/master/assets/images/model_p.png?raw=true)
 
 [ [Paper](http://www.dicta2020.org/wp-content/uploads/2020/09/53_CameraReady.pdf), Code ] 
+
+
+### Bangla Part of Speech Tagging Using Contextual Embeddings and Oversampling Techniques
+Our contribution in this paper is that we transformed the overall sequential modeling problem to an inconsequent model using BERT embeddings to leverage the existing well understood oversampling algorithms for improving PoS Tagging using a shallow feed-forward Neural Network. Our experiment results indicate that Synthetic Minority Over-sampling Technique (SMOTE) works well as an oversampling algorithm for BERT embeddings.
+
+![proposed architectures](https://github.com/mdhasanai/mdhasanai.github.io/blob/master/assets/images/POS_OUR_model.png?raw=true)
+
+[ [Paper](https://link.springer.com/chapter/10.1007/978-3-030-63128-4_50), Code ] 
+
