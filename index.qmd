@@ -22,7 +22,6 @@ about:
 
 format: 
   html:
-    theme: lumen
     toc: false
     smooth-scroll: true
     css: styles.css
