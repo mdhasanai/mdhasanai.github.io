@@ -1,0 +1,56 @@
+---
+title: "Md Hasan"
+image: img/hasan.jpeg
+page-layout: full
+about:
+  template: trestles
+  image-width: 20em
+  image-shape: round
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/mdhasanai
+    - icon: github
+      text: Github
+      href: https://github.com/mdhasanai
+    - icon: email
+      text: Email
+      href: mailto:mdhasan.fau@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/mdhasanai/
+
+format: 
+  html:
+    theme: lumen
+    toc: false
+    smooth-scroll: true
+    css: styles.css
+    code-fold: false
+    header-includes:
+      - |
+        <style>
+          h1 {
+            color: #2e86de;  # This is a blue color for the heading
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        </style>
+    
+---
+
+# Welcome to My Portfolio
+
+Hello, I am Md Hasan, a **Data Scientist** deeply passionate about **Generative AI (GenAI)**, **Large Language Models (LLMs)**, **Computer Vision**, and **MLOps**.
+
+
+Currently, I am pursuing my MSc in **Artificial Intelligence** at **Friedrich-Alexander University Erlangen-Nuremberg (FAU)**, Nürnberg, Germany. I am also pursuing my **Master's thesis** on *A multimodal approach for automatic generation of radiology reports using chest X-ray images* by FAU research funding, which combines my interests in AI and healthcare applications. 
+
+
+Alongside my academic pursuits, I am employed as a **Data Scientist (working student)** at **Innomotics GmbH**, a Siemens business, where I focus on developing advanced RAG applications using LLMs. Prior to this, I worked as a **Data Analytics (working student)** at **BMW Group**, where I developed ETL workflows, predictive analysis models, and data-driven solutions to improve internal business processes.
+
+
+You can learn more about my work and projects on my **Publications & Projects** page, or feel free to reach out to me via **[contact information](mailto:mdhasan.nsu@gmail.com)**.
+
+
