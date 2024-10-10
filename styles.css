@@ -1,1 +1,17 @@
 /* css styles */
+/* Load Bootstrap Icons */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css');
+
+/* Load Font Awesome (optional, if you're using Font Awesome) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Custom Navbar Styling */
+.navbar i {
+  margin-right: 5px;  /* Adds some spacing between icons and text */
+  color: #3498db;     /* Customize the color of icons */
+}
+
+/* Other custom styles for your site */
+body {
+  font-family: 'Arial', sans-serif;
+}
