@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: "docs"
 
 website:
   title: "Hasan"
@@ -16,9 +17,9 @@ website:
         text: Contact
       - href: resume.qmd
         text: Resume
-
   page-footer:
     left: "© 2021 Md Hasan"
+
 format:
   html:
     # theme: flatly
