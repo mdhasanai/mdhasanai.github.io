@@ -14,7 +14,7 @@ jobs:
     steps:
     # Step 1: Check out the repository
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     # Step 2: Set up Quarto
     - name: Setup Quarto
