@@ -13,12 +13,12 @@ website:
         text: Projects
       - href: publications.qmd
         text: Publications
-      - href: contact.qmd
-        text: Contact
       - href: resume.qmd
         text: Resume
+      - href: contact.qmd
+        text: Contact
   page-footer:
-    left: "© 2021 Md Hasan"
+    left: "© 2024 Md Hasan"
 
 format:
   html:
@@ -30,6 +30,5 @@ format:
     linestretch: 1.7
     toc: false
     # dark: darkly
-
 editor: visual
 
