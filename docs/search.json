@@ -28,6 +28,13 @@
     "text": "Welcome to My Portfolio\nHello, I am Md Hasan, a Data Scientist deeply passionate about Generative AI (GenAI), Large Language Models (LLMs), Computer Vision, and MLOps.\nCurrently, I am pursuing my MSc in Artificial Intelligence at Friedrich-Alexander University Erlangen-Nuremberg (FAU), Nürnberg, Germany. I am also pursuing my Master’s thesis on A multimodal approach for automatic generation of radiology reports using chest X-ray images by FAU research funding, which combines my interests in AI and healthcare applications.\nAlongside my academic pursuits, I am employed as a Data Scientist (working student) at Innomotics GmbH, a Siemens business, where I focus on developing advanced RAG applications using LLMs. Prior to this, I worked as a Data Analytics (working student) at BMW Group, where I developed ETL workflows, predictive analysis models, and data-driven solutions to improve internal business processes.\nYou can learn more about my work and projects on my Publications & Projects page, or feel free to reach out to me via contact information."
   },
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Contact Information",
+    "section": "",
+    "text": "This is Resume"
+  },
+  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact Information",
@@ -35,10 +42,31 @@
     "text": "Md Hasan, MSc\nmdhasan.fau@gmail.com\nThe best way to contact me is at the email address above."
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Contact Information",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "This is Resume"
+    "text": "Here are some of my recent publications:"
+  },
+  {
+    "objectID": "publications.html#mhasan-multi-head-angular-self-attention-network-for-spoof-detection",
+    "href": "publications.html#mhasan-multi-head-angular-self-attention-network-for-spoof-detection",
+    "title": "Publications",
+    "section": "1. MHASAN: Multi-head Angular Self-Attention Network for Spoof Detection",
+    "text": "1. MHASAN: Multi-head Angular Self-Attention Network for Spoof Detection\n\nMd Hasan, et al.\nPublished in [ICPR], 2022\nThis paper presents a novel multi-head angular self-attention network designed to improve spoof detection in biometric systems. The proposed method enhances feature extraction capabilities and achieves state-of-the-art performance in face anti-spoofing tasks. - Read the paper"
+  },
+  {
+    "objectID": "publications.html#bi-fpnfas-bi-directional-feature-pyramid-network-for-pixel-wise-face-anti-spoofing-leveraging-fourier-spectra",
+    "href": "publications.html#bi-fpnfas-bi-directional-feature-pyramid-network-for-pixel-wise-face-anti-spoofing-leveraging-fourier-spectra",
+    "title": "Publications",
+    "section": "2. Bi-FPNFAS: Bi-directional Feature Pyramid Network for Pixel-wise Face Anti-Spoofing Leveraging Fourier Spectra",
+    "text": "2. Bi-FPNFAS: Bi-directional Feature Pyramid Network for Pixel-wise Face Anti-Spoofing Leveraging Fourier Spectra\n\nMd Hasan, et al.\nPublished in [Sensors], 2021\nThis work introduces a bi-directional feature pyramid network (Bi-FPN) that leverages Fourier spectra for pixel-wise face anti-spoofing. By focusing on both high- and low-level features, the network improves robustness against various spoofing attacks.\nRead the paper"
+  },
+  {
+    "objectID": "publications.html#bangla-part-of-speech-tagging-using-contextual-embeddings-and-oversampling-techniques",
+    "href": "publications.html#bangla-part-of-speech-tagging-using-contextual-embeddings-and-oversampling-techniques",
+    "title": "Publications",
+    "section": "3. Bangla Part of Speech Tagging Using Contextual Embeddings and Oversampling Techniques",
+    "text": "3. Bangla Part of Speech Tagging Using Contextual Embeddings and Oversampling Techniques\n\nMd Hasan, et al.\nPublished in [FTC], 2021\nThis paper addresses the challenge of Bangla part-of-speech tagging using contextual embeddings and oversampling techniques to handle imbalanced data. The model significantly improves the accuracy of POS tagging for Bangla, a low-resource language.\nRead the paper\n\n\nFeel free to reach out for further details on my research and publications."
   }
 ]

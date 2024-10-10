@@ -1,7 +1,70 @@
 ---
 title: "Publications"
 editor: visual
+format: 
+  html:
+    toc: false
+    css: styles.css
+    code-fold: false
+    header-includes:
+      - |
+        <style>
+          body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+          }
+          h1, h2, h3 {
+            color: #2c3e50;
+          }
+          h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2e86de;
+          }
+          p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #5f6a6a;
+          }
+          .publication-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2980b9;
+          }
+          .authors {
+            font-style: italic;
+            color: #34495e;
+          }
+          .journal {
+            color: #16a085;
+          }
+        </style>
 ---
 
-## Academic Publications
 
+Here are some of my recent publications:
+
+## 1. **MHASAN**: Multi-head Angular Self-Attention Network for Spoof Detection
+   - <span class="authors">Md Hasan, et al.</span>
+   - <span class="journal">Published in [ICPR], 2022</span>
+   - <span class="description">This paper presents a novel multi-head angular self-attention network designed to improve spoof detection in biometric systems. The proposed method enhances feature extraction capabilities and achieves state-of-the-art performance in face anti-spoofing tasks.</span>
+    - **[Read the paper](https://ieeexplore.ieee.org/document/9956117)**
+
+## 2. **Bi-FPNFAS**: Bi-directional Feature Pyramid Network for Pixel-wise Face Anti-Spoofing Leveraging Fourier Spectra
+   - <span class="authors">Md Hasan, et al.</span>
+   - <span class="journal">Published in [Sensors], 2021</span>
+   - <span class="description">This work introduces a bi-directional feature pyramid network (Bi-FPN) that leverages Fourier spectra for pixel-wise face anti-spoofing. By focusing on both high- and low-level features, the network improves robustness against various spoofing attacks.</span>
+   - **[Read the paper](https://doi.org/10.3390/s21082799)**
+
+## 3. **Bangla Part of Speech Tagging Using Contextual Embeddings and Oversampling Techniques**
+   - <span class="authors">Md Hasan, et al.</span>
+   - <span class="journal">Published in [FTC], 2021</span>
+   - <span class="description">This paper addresses the challenge of Bangla part-of-speech tagging using contextual embeddings and oversampling techniques to handle imbalanced data. The model significantly improves the accuracy of POS tagging for Bangla, a low-resource language.</span>
+   - **[Read the paper](https://doi.org/10.1007/978-3-030-63128-4_50)**
+
+---
+
+Feel free to reach out for further details on my research and publications.
