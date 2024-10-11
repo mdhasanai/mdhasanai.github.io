@@ -1,0 +1,62 @@
+---
+title: "Face-Detector with Landmark"
+date: 2023-09-22
+author: "Md Hasan"
+draft: false
+categories:
+  - "🐍 Python"
+  - "🖼️ Computer Vision"
+  - "🧠 Machine Learning"
+  - "📱 Mobile Deployment"
+image: "face_d.jpg"
+---
+
+This project showcases a **lightweight face detector with keypoint detection**, designed for mobile deployment. The model is based on **Retinaface-mobile0.25**, converted into **ncnn python**, **opencv onnx**, and **pytorch python**, providing a slim, efficient face detector suitable for edge computing.
+
+## Key Features:
+- **Face-Detector-1MB slim** with **5 key points** for face detection.
+- **Retinaface-mobile0.25 model** converted into multiple formats: **ncnn python**, **opencv onnx**, **pytorch**.
+- Support for **onnx export**.
+- **Network parameter** and **FLOP calculation** for performance optimization.
+- Modified anchor size of **Retinaface-mobile0.25** to enhance suitability for mobile and edge devices.
+- Reimplementation of **Face-Detector-1MB**, adding key point detection and **ncnn C++ deployment**.
+- Enhanced accuracy compared to original models, making it ideal for real-time applications.
+
+## Technologies and Dependencies:
+- **Ubuntu 18.04**
+- **Python 3.7**
+- **OpenCV**
+- **NumPy**
+
+## Accuracy:
+### Widerface Test (Single-scale Input Resolution: 320x240)
+| Method | Easy | Medium | Hard |
+|--------|------|--------|------|
+| libfacedetection v1 (caffe) | 0.65 | 0.5 | 0.233 |
+| libfacedetection v2 (caffe) | 0.714 | 0.585 | 0.306 |
+| version-slim (original) | 0.765 | 0.662 | 0.385 |
+| version-RFB (original) | 0.784 | 0.688 | 0.418 |
+| version-slim (our) | 0.795 | 0.683 | 0.345 |
+| version-RFB (our) | 0.814 | 0.710 | 0.363 |
+| Retinaface-Mobilenet-0.25 (our) | 0.811 | 0.697 | 0.376 |
+
+### Widerface Test (Single-scale Input Resolution: 640x480)
+| Method | Easy | Medium | Hard |
+|--------|------|--------|------|
+| libfacedetection v1 (caffe) | 0.741 | 0.683 | 0.421 |
+| libfacedetection v2 (caffe) | 0.773 | 0.718 | 0.485 |
+| version-slim (original) | 0.757 | 0.721 | 0.511 |
+| version-RFB (original) | 0.851 | 0.81 | 0.541 |
+| version-slim (our) | 0.850 | 0.808 | 0.595 |
+| version-RFB (our) | 0.865 | 0.828 | 0.622 |
+| Retinaface-Mobilenet-0.25 (our) | 0.873 | 0.836 | 0.638 |
+
+> **Note:** When testing, the long side is either 320 or 640, and the image is scaled in equal proportions.
+
+## References:
+- [FaceBoxes](https://github.com/zisianw/FaceBoxes)
+- [Retinaface (mxnet)](https://github.com/deepinsight/insightface/tree/master/RetinaFace)
+- [Retinaface (pytorch)](https://github.com/biubug6/Pytorch_Retinaface)
+- [Ultra-Light-Fast-Generic-Face-Detector-1MB](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB)
+
+You can view the full project and source code on GitHub: [Face-Detector with Landmark](https://github.com/mdhasanai/lightweight-face-detection.git)

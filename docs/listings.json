@@ -2,6 +2,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/face_detector/index.html",
       "/projects/ev_pattern/index.html"
     ]
   }

@@ -20,5 +20,8 @@
   },
   "projects/ev_pattern/index.qmd": {
     "index.html": "300c2a30"
+  },
+  "projects/face_detector/index.qmd": {
+    "index.html": "ed3e63eb"
   }
 }
