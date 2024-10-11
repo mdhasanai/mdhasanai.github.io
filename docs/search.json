@@ -35,13 +35,6 @@
     "text": "Education\n\nMaster of Science in Artificial Intelligence | [2022 – Current]\nFriedrich-Alexander University Erlangen-Nuremberg\nAddress: 91058, Erlangen, Germany\n\n\nBachelor of Science in Computer Science and Engineering | [2016 – 2020]\nNorth South University\nThesis: BanglaKotha: Bangla Automatic Speech Recognition Leveraging RNN-T."
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Md Hasan",
-    "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018\n:::"
-  },
-  {
     "objectID": "projects/ev_pattern/index.html",
     "href": "projects/ev_pattern/index.html",
     "title": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany",
@@ -100,9 +93,9 @@
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "Contact Information",
+    "title": "Send me a note {{< fa feather-pointed >}}",
     "section": "",
-    "text": "Md Hasan, MSc\nmdhasan.fau@gmail.com\nThe best way to contact me is at the email address above.\n\n\n\n Back to top"
+    "text": "Send me a note {{&lt; fa feather-pointed &gt;}}\nYou can use this form to contact me about speaking engagements, collaborations, or simply to say hello.\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "resume.html",

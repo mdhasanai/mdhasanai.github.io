@@ -7,3 +7,19 @@ Md Hasan, MSc\
 [mdhasan.fau\@gmail.com](mailto:%20mdhasan.fau@gmail.com)
 
 The best way to contact me is at the email address above.
+
+
+<form action="https://formspree.io/f/xovqqqln" method="POST" accept-charset="utf-8">
+
+
+<label for="full-name">Full Name</label>
+<input type="text" name="name" id="full-name" class="form-control" placeholder="First and Last" required>
+
+<label for="email-address">Email Address</label>
+<input type="email" name="_replyto" id="email-address" class="form-control" placeholder="your@email" required>
+
+<label for="message">Message</label>
+  <textarea rows="6" name="message" id="message" class="form-control" placeholder="Write here" required></textarea>
+
+<button type="submit" class="btn btn-primary mt-4">Send message</button>
+</form>
