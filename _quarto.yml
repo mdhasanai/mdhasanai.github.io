@@ -4,7 +4,12 @@ project:
 
 website:
   title: "Hasan"
-  twitter-card: true
+  page-navigation: true
+  back-to-top-navigation: true
+  twitter-card:
+    creator: "@mdhasanai"
+    site: "@mdhasanai"
+    card-style: summary_large_image
   navbar:
     right:
       - href: index.qmd
@@ -13,8 +18,8 @@ website:
         text: Projects
       - href: publications.qmd
         text: Publications
-      - href: resume.qmd
-        text: Resume
+      # - href: resume.qmd
+      #   text: Resume
       - href: contact.qmd
         text: Contact
   page-footer:
@@ -22,13 +27,12 @@ website:
 
 format:
   html:
-    # theme: flatly
-    light: Lux
-    dark: [Lux, theme-dark.scss]
+    theme: 
+      light: [darkly, theme-light.scss]
+      dark: [darkly, theme-dark.scss]
     css: styles.css
     fontsize: 1.2em
     linestretch: 1.7
     toc: false
-    # dark: darkly
 editor: visual
 

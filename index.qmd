@@ -1,12 +1,17 @@
 ---
 title: "Md Hasan"
+subtitle: "Data Scientist at Innomotics GmbH (A siemens Business)"
 image: img/hasan.jpeg
 page-layout: full
 about:
+  id: hero-heading
   template: trestles
   image-width: 20em
   image-shape: round
   links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/mdhasanai/
     - icon: twitter
       text: Twitter
       href: https://twitter.com/mdhasanai
@@ -16,9 +21,7 @@ about:
     - icon: email
       text: Email
       href: mailto:mdhasan.fau@gmail.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/mdhasanai/
+    
 
 format: 
   html:
@@ -39,9 +42,10 @@ format:
     
 ---
 
-# Welcome to My Portfolio
+::: {#hero-heading}
+# Hey, I’m happy you’re here
 
-Hello, I am Md Hasan, a **Data Scientist** deeply passionate about **Generative AI (GenAI)**, **Large Language Models (LLMs)**, **Computer Vision**, and **MLOps**.
+I am Md Hasan, a **Data Scientist** deeply passionate about **Generative AI (GenAI)**, **Large Language Models (LLMs)**, **Computer Vision**, and **MLOps**.
 
 
 Currently, I am pursuing my MSc in **Artificial Intelligence** at **Friedrich-Alexander University Erlangen-Nuremberg (FAU)**, Nürnberg, Germany. I am also pursuing my **Master's thesis** on *A multimodal approach for automatic generation of radiology reports using chest X-ray images* by FAU research funding, which combines my interests in AI and healthcare applications. 
@@ -49,7 +53,23 @@ Currently, I am pursuing my MSc in **Artificial Intelligence** at **Friedrich-Al
 
 Alongside my academic pursuits, I am employed as a **Data Scientist (working student)** at **Innomotics GmbH**, a Siemens business, where I focus on developing advanced RAG applications using LLMs. Prior to this, I worked as a **Data Analytics (working student)** at **BMW Group**, where I developed ETL workflows, predictive analysis models, and data-driven solutions to improve internal business processes.
 
-
 You can learn more about my work and projects on my **Publications & Projects** page, or feel free to reach out to me via **[contact information](mailto:mdhasan.nsu@gmail.com)**.
+<br><br>
+
+:::
+## Education
+
+#### **Master of Science in Artificial Intelligence** | [2022 – Current] 
+**Friedrich-Alexander University Erlangen-Nuremberg**  
+**Address:** 91058, Erlangen, Germany
+
+#### **Bachelor of Science in Computer Science and Engineering** | [2016 – 2020]   
+**North South University**  
+*Thesis:* BanglaKotha: Bangla Automatic Speech Recognition Leveraging RNN-T.
 
 
+<!-- ## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Sept 2012 - April 2018 -->
