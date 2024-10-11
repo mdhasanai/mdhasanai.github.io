@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -209,17 +209,25 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Python,LLMs,Data Science" data-listing-date-sort="1695247200000" data-listing-file-modified-sort="1728646598587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
+<div class="g-col-1" data-index="0" data-categories="🐍 Python,📊 Data Science,🗄️ SQL,🤖 Machine Learning" data-listing-date-sort="1695247200000" data-listing-file-modified-sort="1728674605786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
 <a href="./projects/ev_pattern/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./projects/ev_pattern/ev.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany
 </h5>
 <div class="card-text listing-description">
-This data science project analyzes the availability and usage patterns of electric vehicle (EV) charging facilities in Germany. The aim is to provide insights into the…
+In this data science project, I have analyzed the availability and usage patterns of electric vehicle (EV) charging facilities in Germany as part of my course project. By…<strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
