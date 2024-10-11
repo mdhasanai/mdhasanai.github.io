@@ -17,5 +17,8 @@
   },
   "projects.qmd": {
     "projects.html": "9d90817b"
+  },
+  "projects/ev_pattern/index.qmd": {
+    "index.html": "300c2a30"
   }
 }
