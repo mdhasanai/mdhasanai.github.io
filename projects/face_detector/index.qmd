@@ -1,6 +1,6 @@
 ---
 title: "Face-Detector with Landmark"
-date: 2023-09-22
+date: 2022-09-22
 author: "Md Hasan"
 draft: false
 categories:

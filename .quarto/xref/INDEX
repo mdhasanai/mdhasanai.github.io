@@ -23,5 +23,8 @@
   },
   "projects/face_detector/index.qmd": {
     "index.html": "ed3e63eb"
+  },
+  "projects/speech_recognition/index.qmd": {
+    "index.html": "e8767061"
   }
 }

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Md Hasan">
-<meta name="dcterms.date" content="2022-09-22">
+<meta name="dcterms.date" content="2020-09-23">
 
-<title>Face-Detector with Landmark – Hasan</title>
+<title>Bangla Speech Recognition – Hasan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta name="twitter:title" content="Face-Detector with Landmark – Hasan">
+<meta name="twitter:title" content="Bangla Speech Recognition – Hasan">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="face_d.jpg">
+<meta name="twitter:image" content="speech.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -131,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Face-Detector with Landmark</h1>
+<h1 class="title">Bangla Speech Recognition</h1>
   <div class="quarto-categories">
     <div class="quarto-category">🐍 Python</div>
-    <div class="quarto-category">🖼️ Computer Vision</div>
-    <div class="quarto-category">🧠 Machine Learning</div>
-    <div class="quarto-category">📱 Mobile Deployment</div>
+    <div class="quarto-category">🔥 PyTorch</div>
+    <div class="quarto-category">🗣️ Speech Recognition</div>
+    <div class="quarto-category">📚 Seq2Seq Model</div>
   </div>
   </div>
 
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 22, 2022</p>
+      <p class="date">September 23, 2020</p>
     </div>
   </div>
   
@@ -166,157 +166,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project showcases a <strong>lightweight face detector with keypoint detection</strong>, designed for mobile deployment. The model is based on <strong>Retinaface-mobile0.25</strong>, converted into <strong>ncnn python</strong>, <strong>opencv onnx</strong>, and <strong>pytorch python</strong>, providing a slim, efficient face detector suitable for edge computing.</p>
+<p>This project implements a <strong>Sequence-to-Sequence (Seq2Seq)</strong> model for <strong>Bangla speech recognition</strong> using <strong>PyTorch</strong>. The project focuses on sequence-to-sequence tasks with utilities for data loading, preprocessing, training, and validation. This project aims to build an efficient speech recognition system for the Bangla language.</p>
 <section id="key-features" class="level2">
 <h2 class="anchored" data-anchor-id="key-features">Key Features:</h2>
 <ul>
-<li><strong>Face-Detector-1MB slim</strong> with <strong>5 key points</strong> for face detection.</li>
-<li><strong>Retinaface-mobile0.25 model</strong> converted into multiple formats: <strong>ncnn python</strong>, <strong>opencv onnx</strong>, <strong>pytorch</strong>.</li>
-<li>Support for <strong>onnx export</strong>.</li>
-<li><strong>Network parameter</strong> and <strong>FLOP calculation</strong> for performance optimization.</li>
-<li>Modified anchor size of <strong>Retinaface-mobile0.25</strong> to enhance suitability for mobile and edge devices.</li>
-<li>Reimplementation of <strong>Face-Detector-1MB</strong>, adding key point detection and <strong>ncnn C++ deployment</strong>.</li>
-<li>Enhanced accuracy compared to original models, making it ideal for real-time applications.</li>
+<li><strong>Seq2Seq Model</strong>: A sequence-to-sequence deep learning model is used to transcribe Bangla speech to text.</li>
+<li><strong>PyTorch Implementation</strong>: The entire model is built using the <strong>PyTorch</strong> framework.</li>
+<li><strong>Data Loading &amp; Preprocessing</strong>: The project includes utilities for loading, preprocessing, and preparing the speech dataset.</li>
+<li><strong>Training and Validation</strong>: Scripts are provided for training and validating the model.</li>
 </ul>
 </section>
 <section id="technologies-and-dependencies" class="level2">
 <h2 class="anchored" data-anchor-id="technologies-and-dependencies">Technologies and Dependencies:</h2>
 <ul>
-<li><strong>Ubuntu 18.04</strong></li>
 <li><strong>Python 3.7</strong></li>
-<li><strong>OpenCV</strong></li>
+<li><strong>PyTorch</strong></li>
 <li><strong>NumPy</strong></li>
+<li><strong>Librosa</strong>: For audio processing.</li>
 </ul>
-</section>
-<section id="accuracy" class="level2">
-<h2 class="anchored" data-anchor-id="accuracy">Accuracy:</h2>
-<section id="widerface-test-single-scale-input-resolution-320x240" class="level3">
-<h3 class="anchored" data-anchor-id="widerface-test-single-scale-input-resolution-320x240">Widerface Test (Single-scale Input Resolution: 320x240)</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Easy</th>
-<th>Medium</th>
-<th>Hard</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>libfacedetection v1 (caffe)</td>
-<td>0.65</td>
-<td>0.5</td>
-<td>0.233</td>
-</tr>
-<tr class="even">
-<td>libfacedetection v2 (caffe)</td>
-<td>0.714</td>
-<td>0.585</td>
-<td>0.306</td>
-</tr>
-<tr class="odd">
-<td>version-slim (original)</td>
-<td>0.765</td>
-<td>0.662</td>
-<td>0.385</td>
-</tr>
-<tr class="even">
-<td>version-RFB (original)</td>
-<td>0.784</td>
-<td>0.688</td>
-<td>0.418</td>
-</tr>
-<tr class="odd">
-<td>version-slim (our)</td>
-<td>0.795</td>
-<td>0.683</td>
-<td>0.345</td>
-</tr>
-<tr class="even">
-<td>version-RFB (our)</td>
-<td>0.814</td>
-<td>0.710</td>
-<td>0.363</td>
-</tr>
-<tr class="odd">
-<td>Retinaface-Mobilenet-0.25 (our)</td>
-<td>0.811</td>
-<td>0.697</td>
-<td>0.376</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="widerface-test-single-scale-input-resolution-640x480" class="level3">
-<h3 class="anchored" data-anchor-id="widerface-test-single-scale-input-resolution-640x480">Widerface Test (Single-scale Input Resolution: 640x480)</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Easy</th>
-<th>Medium</th>
-<th>Hard</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>libfacedetection v1 (caffe)</td>
-<td>0.741</td>
-<td>0.683</td>
-<td>0.421</td>
-</tr>
-<tr class="even">
-<td>libfacedetection v2 (caffe)</td>
-<td>0.773</td>
-<td>0.718</td>
-<td>0.485</td>
-</tr>
-<tr class="odd">
-<td>version-slim (original)</td>
-<td>0.757</td>
-<td>0.721</td>
-<td>0.511</td>
-</tr>
-<tr class="even">
-<td>version-RFB (original)</td>
-<td>0.851</td>
-<td>0.81</td>
-<td>0.541</td>
-</tr>
-<tr class="odd">
-<td>version-slim (our)</td>
-<td>0.850</td>
-<td>0.808</td>
-<td>0.595</td>
-</tr>
-<tr class="even">
-<td>version-RFB (our)</td>
-<td>0.865</td>
-<td>0.828</td>
-<td>0.622</td>
-</tr>
-<tr class="odd">
-<td>Retinaface-Mobilenet-0.25 (our)</td>
-<td>0.873</td>
-<td>0.836</td>
-<td>0.638</td>
-</tr>
-</tbody>
-</table>
-<blockquote class="blockquote">
-<p><strong>Note:</strong> When testing, the long side is either 320 or 640, and the image is scaled in equal proportions.</p>
-</blockquote>
-</section>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References:</h2>
-<ul>
-<li><a href="https://github.com/zisianw/FaceBoxes">FaceBoxes</a></li>
-<li><a href="https://github.com/deepinsight/insightface/tree/master/RetinaFace">Retinaface (mxnet)</a></li>
-<li><a href="https://github.com/biubug6/Pytorch_Retinaface">Retinaface (pytorch)</a></li>
-<li><a href="https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB">Ultra-Light-Fast-Generic-Face-Detector-1MB</a></li>
-</ul>
-<p>You can view the full project and source code on GitHub: <a href="https://github.com/mdhasanai/lightweight-face-detection.git">Face-Detector with Landmark</a></p>
+<p>You can view the full project and source code on GitHub: <a href="https://github.com/mdhasanai/Bangla-Speech-Recognition.git">Bangla Speech Recognition</a></p>
 
 
 </section>
