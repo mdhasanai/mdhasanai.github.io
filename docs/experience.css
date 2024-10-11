@@ -1,0 +1,68 @@
+/* experience.css */
+
+.experience-card {
+    background-color: #f0f9ff; /* Light blue background */
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .experience-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .job-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .company-name {
+    font-size: 1.2em;
+    color: #28a745; /* Green text for company name */
+    margin: 0;
+  }
+  
+  .tech-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tech-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .experience-card-body {
+    margin-top: 20px;
+  }
+  
+  .date-range {
+    font-size: 0.9em;
+    color: #6c757d; /* Muted text color */
+    margin-bottom: 10px;
+  }
+  
+  .experience-details {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .experience-details li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
