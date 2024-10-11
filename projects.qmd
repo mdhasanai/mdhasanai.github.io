@@ -1,4 +1,9 @@
 ---
 title: "Projects"
-editor: visual
+listing:
+    contents: projects
+    type: grid
+    sort: "date desc"
+    page-size: 10
+    filter-ui: [title, date]
 ---

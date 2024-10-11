@@ -1,0 +1,28 @@
+---
+title: "Bangla Speech Recognition"
+date: 2020-09-23
+author: "Md Hasan"
+draft: false
+categories:
+  - "🐍 Python"
+  - "🔥 PyTorch"
+  - "🗣️ Speech Recognition"
+  - "📚 Seq2Seq Model"
+image: "speech.jpg"
+---
+
+This project implements a **Sequence-to-Sequence (Seq2Seq)** model for **Bangla speech recognition** using **PyTorch**. The project focuses on sequence-to-sequence tasks with utilities for data loading, preprocessing, training, and validation. This project aims to build an efficient speech recognition system for the Bangla language.
+
+## Key Features:
+- **Seq2Seq Model**: A sequence-to-sequence deep learning model is used to transcribe Bangla speech to text.
+- **PyTorch Implementation**: The entire model is built using the **PyTorch** framework.
+- **Data Loading & Preprocessing**: The project includes utilities for loading, preprocessing, and preparing the speech dataset.
+- **Training and Validation**: Scripts are provided for training and validating the model.
+
+## Technologies and Dependencies:
+- **Python 3.7**
+- **PyTorch**
+- **NumPy**
+- **Librosa**: For audio processing.
+
+You can view the full project and source code on GitHub: [Bangla Speech Recognition](https://github.com/mdhasanai/Bangla-Speech-Recognition.git)
