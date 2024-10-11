@@ -2,7 +2,9 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/ev_pattern/index.html"
+      "/projects/ev_pattern/index.html",
+      "/projects/face_detector/index.html",
+      "/projects/speech_recognition/index.html"
     ]
   }
 ]
