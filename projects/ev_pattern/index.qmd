@@ -1,0 +1,13 @@
+---
+title: "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany"
+date: 2023-09-21
+author: "Md Hasan"
+draft: false
+categories:
+  - Python
+  - LLMs
+  - Data Science
+# image: "image.png"
+---
+
+This data science project analyzes the availability and usage patterns of electric vehicle (EV) charging facilities in Germany. The aim is to provide insights into the current state of EV charging infrastructure, understand usage behaviors, and offer recommendations for future expansions. By leveraging statistical and machine-learning methodologies, the project examines the distribution and usage patterns of EV charging stations, variations in charging points and power capacity, and regional disparities in charging station availability. The findings highlight the need for expanding the charging network in areas with limited coverage and emphasize the importance of regular monitoring to keep up with the evolving EV landscape.
