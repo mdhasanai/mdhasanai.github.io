@@ -93,9 +93,9 @@
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "Send me a note {{< fa feather-pointed >}}",
+    "title": "Contact Information",
     "section": "",
-    "text": "Send me a note {{&lt; fa feather-pointed &gt;}}\nYou can use this form to contact me about speaking engagements, collaborations, or simply to say hello.\n\n\n\n\n\n\n Back to top"
+    "text": "Md Hasan, MSc\nmdhasan.fau@gmail.com\nThe best way to contact me is at the email address above.\n\nFull Name \nEmail Address \nMessage\n\n\nSend message\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "resume.html",
@@ -130,7 +130,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany\n\n\n\n\n\n\nMd Hasan\n\n\nSep 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFace-Detector with Landmark\n\n\n\n\n\n\nMd Hasan\n\n\nSep 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBangla Speech Recognition\n\n\n\n\n\n\nMd Hasan\n\n\nSep 23, 2020\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany\n\n\n\n🐍 Python\n\n\n📊 Data Science\n\n\n🗄️ SQL\n\n\n🤖 Machine Learning\n\n\n\n\nSep 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFace-Detector with Landmark\n\n\n\n🐍 Python\n\n\n🖼️ Computer Vision\n\n\n🧠 Machine Learning\n\n\n📱 Mobile Deployment\n\n\n\n\nSep 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBangla Speech Recognition\n\n\n\n🐍 Python\n\n\n🔥 PyTorch\n\n\n🗣️ Speech Recognition\n\n\n📚 Seq2Seq Model\n\n\n\n\nSep 23, 2020\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "publications.html",

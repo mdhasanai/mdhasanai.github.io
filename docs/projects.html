@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-categories','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-date"],
     };
@@ -137,7 +137,7 @@ window.Quarto = {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -179,12 +179,12 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -193,7 +193,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -227,13 +227,21 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany
 </h5>
-<div class="card-text listing-description">
-In this data science project, I have analyzed the availability and usage patterns of electric vehicle (EV) charging facilities in Germany as part of my course project. By…<strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><strong></strong>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('🐍 Python'); return false;">
+🐍 Python
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Md Hasan
+<div class="listing-category" onclick="window.quartoListingCategory('📊 Data Science'); return false;">
+📊 Data Science
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('🗄️ SQL'); return false;">
+🗄️ SQL
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('🤖 Machine Learning'); return false;">
+🤖 Machine Learning
+</div>
+</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Sep 21, 2023
 </div>
@@ -252,13 +260,21 @@ Sep 21, 2023
 <h5 class="no-anchor card-title listing-title">
 Face-Detector with Landmark
 </h5>
-<div class="card-text listing-description">
-This project showcases a <strong>lightweight face detector with keypoint detection</strong>, designed for mobile deployment. The model is based on <strong>Retinaface-mobile0.25</strong>, converted into <strong>ncnn…</strong><strong></strong><strong></strong>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('🐍 Python'); return false;">
+🐍 Python
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Md Hasan
+<div class="listing-category" onclick="window.quartoListingCategory('🖼️ Computer Vision'); return false;">
+🖼️ Computer Vision
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('🧠 Machine Learning'); return false;">
+🧠 Machine Learning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('📱 Mobile Deployment'); return false;">
+📱 Mobile Deployment
+</div>
+</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Sep 22, 2022
 </div>
@@ -277,13 +293,21 @@ Sep 22, 2022
 <h5 class="no-anchor card-title listing-title">
 Bangla Speech Recognition
 </h5>
-<div class="card-text listing-description">
-This project implements a <strong>Sequence-to-Sequence (Seq2Seq)</strong> model for <strong>Bangla speech recognition</strong> using <strong>PyTorch</strong>. The project focuses on sequence-to-sequence tasks with utilities…
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('🐍 Python'); return false;">
+🐍 Python
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Md Hasan
+<div class="listing-category" onclick="window.quartoListingCategory('🔥 PyTorch'); return false;">
+🔥 PyTorch
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('🗣️ Speech Recognition'); return false;">
+🗣️ Speech Recognition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('📚 Seq2Seq Model'); return false;">
+📚 Seq2Seq Model
+</div>
+</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Sep 23, 2020
 </div>

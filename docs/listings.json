@@ -6,5 +6,18 @@
       "/projects/face_detector/index.html",
       "/projects/speech_recognition/index.html"
     ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/contact.html",
+      "/resume.html",
+      "/projects.html",
+      "/index.html",
+      "/about.html",
+      "/projects/ev_pattern/index.html",
+      "/projects/face_detector/index.html",
+      "/projects/speech_recognition/index.html"
+    ]
   }
 ]
