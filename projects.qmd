@@ -6,4 +6,9 @@ listing:
     sort: "date desc"
     page-size: 10
     filter-ui: [title, date]
+    fields: [title, categories, date, image]
+    image-align: left
+format: 
+  html: 
+    page-layout: full
 ---
