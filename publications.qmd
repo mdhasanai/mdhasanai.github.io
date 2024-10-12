@@ -1,57 +1,14 @@
 ---
 title: "Publications"
 editor: visual
-listing: 
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [title, author, categories, date]
-  image-align: left
-title-block-banner: false
+
 format: 
   html:
     page-layout: full
     toc: false
     css: styles.css
     code-fold: false
-    header-includes:
-      - |
-        <style>
-          body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-          }
-          h1, h2, h3 {
-            color: #2c3e50;
-          }
-          h1 {
-            font-size: 2.5em;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #2e86de;
-          }
-          p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            color: #5f6a6a;
-          }
-          .publication-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #2980b9;
-          }
-          .authors {
-            font-style: italic;
-            color: #34495e;
-          }
-          .journal {
-            color: #16a085;
-          }
-        </style>
+    
 ---
 
 

@@ -11,4 +11,6 @@ listing:
 format: 
   html: 
     page-layout: full
+    smooth-scroll: true
+    css: styles.css
 ---

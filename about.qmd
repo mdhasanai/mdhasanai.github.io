@@ -11,6 +11,10 @@ about:
     - icon: github
       text: Github
       href: https://github.com
+format: 
+  html:
+    smooth-scroll: true
+    css: styles.css
 ---
 
 ### This content appears above the formatted about page content.
