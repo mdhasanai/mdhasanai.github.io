@@ -28,6 +28,7 @@
     "text": "LinkedIn\n  \n  \n    \n     Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nI am Md Hasan, a Data Scientist deeply passionate about Generative AI (GenAI), Large Language Models (LLMs), Computer Vision, and MLOps.\nCurrently, I am pursuing my MSc in Artificial Intelligence at Friedrich-Alexander University Erlangen-Nuremberg (FAU), Nürnberg, Germany. I am also pursuing my Master’s thesis on A multimodal approach for automatic generation of radiology reports using chest X-ray images by FAU research funding, which combines my interests in AI and healthcare applications.\nAlongside my academic pursuits, I am employed as a Data Scientist (working student) at Innomotics GmbH, a Siemens business, where I focus on developing advanced RAG applications using LLMs. Prior to this, I worked as a Data Analytics (working student) at BMW Group, where I developed ETL workflows, predictive analysis models, and data-driven solutions to improve internal business processes.\nYou can learn more about my work and projects on my Publications & Projects page, or feel free to reach out to me via contact information."
   },
   {
+
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Md Hasan",
@@ -60,6 +61,34 @@
     "href": "projects/face_detector/index.html",
     "title": "Face-Detector with Landmark",
     "section": "",
+=======
+    "objectID": "projects/ev_pattern/index.html",
+    "href": "projects/ev_pattern/index.html",
+    "title": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany",
+    "section": "",
+    "text": "In this data science project, I have analyzed the availability and usage patterns of electric vehicle (EV) charging facilities in Germany as part of my course project. By leveraging Python for data manipulation, SQL for database management, and machine learning techniques for predictive analysis. This project offers deep insights into the current state of EV charging infrastructure. The analysis is powered by various libraries, including Pandas for data wrangling, Plotly for interactive visualizations, Seaborn and Matplotlib for exploratory data analysis (EDA), and SQLAlchemy for database interactions."
+  },
+  {
+    "objectID": "projects/ev_pattern/index.html#key-technologies-and-methodologies-used",
+    "href": "projects/ev_pattern/index.html#key-technologies-and-methodologies-used",
+    "title": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany",
+    "section": "Key technologies and methodologies used:",
+    "text": "Key technologies and methodologies used:\n\nPython: As the primary programming language, Python scripts handle data loading, cleaning, and preprocessing, ensuring smooth integration between different stages of analysis.\nELT Pipeline: The project explores the implementation of an Extract, Load, Transform (ELT) pipeline to efficiently process and load large datasets into a database, followed by transformations and analysis.\nSQL: Datasets are stored and queried using SQLite to facilitate seamless data retrieval and manipulation, especially when handling large-scale datasets.\nMachine Learning: Advanced machine learning algorithms are used to explore potential predictive patterns and offer recommendations for optimizing EV infrastructure placement.\nData Visualization: Plotly and Seaborn are employed to generate interactive charts and graphs, displaying trends such as regional disparities, usage patterns, and variations in power capacity across different types of charging stations.\nExploratory Data Analysis (EDA): Libraries like Matplotlib help reveal insights from data distributions, correlation matrices, and heatmaps, leading to an informed understanding of the EV landscape in Germany.\nSQLAlchemy: This powerful toolkit aids in connecting to databases and executing SQL queries for efficient data extraction and analysis."
+  },
+  {
+    "objectID": "projects/ev_pattern/index.html#project-objectives",
+    "href": "projects/ev_pattern/index.html#project-objectives",
+    "title": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany",
+    "section": "Project objectives:",
+    "text": "Project objectives:\n\nDistribution and Usage Patterns: Understand how the EV charging stations are distributed across Germany and identify usage trends based on location and type of charging facility.\nVariations in Charging Capacity: Analyze how power capacity and the number of charging points vary across different types of stations.\nRegional Disparities: Identify regions with the highest and lowest concentrations of EV charging stations, providing data-driven insights for future infrastructure expansion.\nELT Pipeline Implementation: Demonstrate the implementation of an efficient data pipeline, managing data ingestion from multiple sources, cleaning, and transforming it to provide actionable insights.\nRecommendations for Expansion: Use statistical findings to propose strategic expansions of the charging network in underserved areas.\n\nThe project emphasizes the need for a well-distributed and efficient charging network to support the growing number of electric vehicles in Germany, and it stresses the importance of continuous monitoring and updates to adapt to the dynamic EV landscape.\nYou can view the full project and source code on GitHub: Electric Vehicle Charging Patterns in Germany"
+
+  },
+  {
+    "objectID": "projects/face_detector/index.html",
+    "href": "projects/face_detector/index.html",
+    "title": "Face-Detector with Landmark",
+    "section": "",
+
     "text": "This project showcases a lightweight face detector with keypoint detection, designed for mobile deployment. The model is based on Retinaface-mobile0.25, converted into ncnn python, opencv onnx, and pytorch python, providing a slim, efficient face detector suitable for edge computing."
   },
   {
@@ -89,6 +118,7 @@
     "title": "Face-Detector with Landmark",
     "section": "References:",
     "text": "References:\n\nFaceBoxes\nRetinaface (mxnet)\nRetinaface (pytorch)\nUltra-Light-Fast-Generic-Face-Detector-1MB\n\nYou can view the full project and source code on GitHub: Face-Detector with Landmark"
+
   },
   {
     "objectID": "contact.html",
@@ -131,6 +161,44 @@
     "title": "Projects",
     "section": "",
     "text": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany\n\n\n\n\n\n\nMd Hasan\n\n\nSep 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFace-Detector with Landmark\n\n\n\n\n\n\nMd Hasan\n\n\nSep 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBangla Speech Recognition\n\n\n\n\n\n\nMd Hasan\n\n\nSep 23, 2020\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Contact Information",
+    "section": "",
+    "text": "This is Resume"
+  },
+  {
+
+    "objectID": "projects/speech_recognition/index.html",
+    "href": "projects/speech_recognition/index.html",
+    "title": "Bangla Speech Recognition",
+    "section": "",
+    "text": "This project implements a Sequence-to-Sequence (Seq2Seq) model for Bangla speech recognition using PyTorch. The project focuses on sequence-to-sequence tasks with utilities for data loading, preprocessing, training, and validation. This project aims to build an efficient speech recognition system for the Bangla language."
+  },
+  {
+    "objectID": "projects/speech_recognition/index.html#key-features",
+    "href": "projects/speech_recognition/index.html#key-features",
+    "title": "Bangla Speech Recognition",
+    "section": "Key Features:",
+    "text": "Key Features:\n\nSeq2Seq Model: A sequence-to-sequence deep learning model is used to transcribe Bangla speech to text.\nPyTorch Implementation: The entire model is built using the PyTorch framework.\nData Loading & Preprocessing: The project includes utilities for loading, preprocessing, and preparing the speech dataset.\nTraining and Validation: Scripts are provided for training and validating the model."
+  },
+  {
+    "objectID": "projects/speech_recognition/index.html#technologies-and-dependencies",
+    "href": "projects/speech_recognition/index.html#technologies-and-dependencies",
+    "title": "Bangla Speech Recognition",
+    "section": "Technologies and Dependencies:",
+    "text": "Technologies and Dependencies:\n\nPython 3.7\nPyTorch\nNumPy\nLibrosa: For audio processing.\n\nYou can view the full project and source code on GitHub: Bangla Speech Recognition"
+  },
+  {
+
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Electric Vehicle Charging Patterns and Infrastructure Analysis in Germany\n\n\n\n\n\n\nMd Hasan\n\n\nSep 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFace-Detector with Landmark\n\n\n\n\n\n\nMd Hasan\n\n\nSep 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBangla Speech Recognition\n\n\n\n\n\n\nMd Hasan\n\n\nSep 23, 2020\n\n\n\n\n\n\n\n\nNo matching items"
+
   },
   {
     "objectID": "publications.html",
