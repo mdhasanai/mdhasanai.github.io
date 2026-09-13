@@ -1,32 +1,31 @@
 name: Deploy to GitHub Pages
 
-# Trigger this workflow on push to the main branch
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
-# Define the job that will build and deploy the site
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    # Step 1: Check out the repository
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    # Step 2: Set up Quarto
-    - name: Setup Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
-
-    # Step 3: Render the site with Quarto
-    - name: Render the site
-      run: quarto render
-
-    # Step 4: Deploy the site to GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs  # This should match the output directory from your _quarto.yml
+      # The site is plain HTML/CSS/JS — no build step. Publish the repo root
+      # to the gh-pages branch, minus the files that only matter to the repo.
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          exclude_assets: '.github,.claude,.gitignore,README.md'
+          enable_jekyll: false
