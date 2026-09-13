@@ -1,6 +1,0 @@
----
-title: "Contact Information"
-editor: visual
----
-
-# This is Resume
